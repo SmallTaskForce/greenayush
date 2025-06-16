@@ -1,141 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Green ආයුෂ</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
-  <style>
-    body {
-      font-family: 'Raleway', sans-serif;
-    }
-    html {
-      scroll-behavior: smooth;
-    }
-    .fade-transition {
-      transition: opacity 0.7s ease-in-out, z-index 0.7s;
-      opacity: 1;
-      z-index: 10;
-    }
-    .fade-out {
-      opacity: 0 !important;
-    }
-    .opacity-0 {
-      opacity: 0;
-      z-index: 0;
-    }
-    @keyframes slideFadeZoom {
-      0% { opacity: 0; transform: scale(0.95) translateY(30px); }
-      100% { opacity: 1; transform: scale(1) translateY(0); }
-    }
-    .animate-about {
-      animation: slideFadeZoom 1.2s ease-out both;
-    }
-  </style>
+
+     <title>Green Auysha</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/animate.css">
+     <link rel="stylesheet" href="css/owl.carousel.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     <link rel="stylesheet" href="css/magnific-popup.css">
+
+     <link rel="apple-touch-icon" sizes="180x180" href="images/fav/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="images/fav/favicon-16x16.png">
+     <link rel="manifest" href="images/fav/site.webmanifest">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/templatemo-style.css">
+
 </head>
-<body class="bg-green-50 text-[#205F22]">
-  <!-- Navigation -->
-  <nav class="bg-[#205F22] shadow-md sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-      <div class="block lg:hidden">
-        <button id="menu-toggle" class="text-white focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div>
-      <div id="nav-menu" class="hidden lg:flex lg:space-x-6 text-white font-medium uppercase w-full justify-center">
-        <a href="#about" class="hover:text-green-200">About</a>
-        <a href="#products" class="hover:text-green-200">Products</a>
-      </div>
+<body>
+
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+
+               <span class="spinner-rotate"></span>
+               
+          </div>
+     </section>
+
+
+     <!-- MENU -->
+<div class="container">
+
+               <nav class="navbar custom-navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">
+        <img src="images/logo.png" alt="Green ආයුෂ">
+      </a>
     </div>
-  </nav>
 
-  <!-- Header with Logo Slider -->
-  <header class="relative text-[#205F22] text-center py-20 px-4 overflow-hidden">
-    <div class="relative h-[300px] w-[300px] mx-auto mb-4">
-      <img id="logo1" src="logo1.png"
-        class="absolute top-0 left-0 w-full h-full transition-opacity duration-700 ease-in-out fade-transition"
-        style="z-index: 10;" alt="Logo 1">
-      <img id="logo2" src="logo2.png"
-        class="absolute top-0 left-0 w-full h-full transition-opacity duration-700 ease-in-out fade-transition opacity-0"
-        style="z-index: 0;" alt="Logo 2">
+    <div class="collapse navbar-collapse" id="main-nav">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="./index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#pillars">Our Pillars</a></li>
+        <li><a href="#greena">Greena</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
-    <h1 id="rotating-title" class="text-4xl font-bold mb-4 fade-transition">It's a habit!</h1>
-    <a href="mailto:greenayusha@gmail.com"
-      class="inline-block mb-6 px-6 py-3 bg-[#205F22] text-white font-semibold rounded-full shadow hover:bg-green-700 transition relative z-10">
-      Learn More
-    </a>
-  </header>
+  </div>
+</nav>
 
-  <!-- About Section -->
-  <section id="about" class="max-w-3xl mx-auto py-20 px-6 text-center rounded-3xl shadow-md animate-about mb-20">
-    <p class="text-lg mb-8">At Green ආයුෂ, we believe true wellness is a balance of nature, tradition, and innovation.
-      Inspired by the ancient wisdom of Sri Lankan heritage and guided by the clarity of modern science, we create
-      holistic wellness experiences that nurture the body, mind, and spirit.</p>
-    <div class="max-w-4xl mx-auto text-center relative z-10">
-      <h2 class="text-2xl font-bold mb-4">Vision</h2>
-      <p class="mb-8">"Inspiring healthy living, sustaining a greener planet."</p>
-      <h2 class="text-2xl font-bold mb-4">Mission</h2>
-      <p>"Developing and strategically positioning scientifically-backed, sustainable products and services that enhance
-        human physical and mental well-being by blending modern technology with the richness of local heritage,
-        seamlessly integrating them into daily habits."</p>
-    </div>
-  </section>
 
-  <!-- Products Section (Centered) -->
-  <section class="bg-[#205F22] text-white py-24 px-6 mt-16" id="products">
-    <div class="max-w-6xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-10">Our Products</h2>
-      <div class="flex flex-wrap justify-center gap-8">
-        <div class="bg-white text-[#205F22] rounded-3xl p-6 shadow-lg transform transition-transform hover:scale-105 max-w-xs w-full">
-          <img src="https://via.placeholder.com/120?text=Herbal+Tea" alt="Fermented Rice (දිය බත)"
-            class="mx-auto mb-4 w-24 h-24 object-contain">
-          <h3 class="text-lg font-bold mb-2">Fermented Rice (දිය බත)</h3>
-         
-        </div>
-        <div class="bg-white text-[#205F22] rounded-3xl p-6 shadow-lg transform transition-transform hover:scale-105 max-w-xs w-full">
-          <img src="https://via.placeholder.com/120?text=Organic+Oil" alt="Good Morning Breakfast"
-            class="mx-auto mb-4 w-24 h-24 object-contain">
-          <h3 class="text-lg font-bold mb-2">"Good Morning" Breakfast</h3>
-        </div>
-      </div>
-    </div>
-  </section>
+          </div>
 
-  <!-- JS Script for Logo + Title Rotation -->
-  <script>
-    const titles = ["It's a habit!", "Inspiring health live."];
-    const logos = [document.getElementById("logo1"), document.getElementById("logo2")];
-    const titleElement = document.getElementById("rotating-title");
 
-    let current = 0;
-    let logoIndex = 0;
+     <!-- HOME -->
+     <section id="home" class="slider" data-stellar-background-ratio="0.5">
+          <div class="row">
 
-    setInterval(() => {
-      const nextLogo = (logoIndex + 1) % logos.length;
+                    <div class="owl-carousel owl-theme">
+                         <div class="item item-first">
+                              <div class="caption">
+                                   <div class="container">
+                                        <div class="col-md-8 col-sm-12">
+                                             <h1 class="shadow-font">A habit, <br>to feel free</h1>
+                                             <a href="#team" class="section-btn btn btn-default smoothScroll">Learn more</a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
 
-      logos[logoIndex].classList.add("opacity-0");
-      logos[nextLogo].classList.remove("opacity-0");
+                         <div class="item item-second">
+                              <div class="caption">
+                                   <div class="container">
+                                        <div class="col-md-8 col-sm-12">
+                                             <h1>Be smart, <br> flow easy</h1>
+                                             <a href="#team" class="section-btn btn btn-default smoothScroll">Learn more</a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
 
-      titleElement.classList.add("fade-out");
+                         <div class="item item-third">
+                              <div class="caption">
+                                   <div class="container">
+                                        <div class="col-md-8 col-sm-12">
+                                             <h1>Meet you, <br> at the deep</h1>
+                                            <a href="#team" class="section-btn btn btn-default smoothScroll">Learn more</a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
 
-      setTimeout(() => {
-        titleElement.textContent = titles[current];
-        titleElement.classList.remove("fade-out");
+          </div>
+     </section>
 
-        current = (current + 1) % titles.length;
-        logoIndex = nextLogo;
-      }, 400);
-    }, 3000);
 
-    document.getElementById("menu-toggle").addEventListener("click", () => {
-      document.getElementById("nav-menu").classList.toggle("hidden");
-    });
-  </script>
+     <!-- ABOUT -->
+     <section id="about" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-6 col-sm-12">
+                         <div class="about-info">
+                              <div class="section-title wow fadeInUp" data-wow-delay="0.2s">
+                                   <h2>About Us.</h2>
+                              </div>
+
+                              <div class="wow fadeInUp" data-wow-delay="0.4s">
+                                   <p>At Green ආයුෂ, we believe true wellness is a balance of nature, tradition, and innovation. Inspired by the ancient wisdom of Sri Lankan heritage and guided by the clarity of modern science, we create holistic wellness experiences that nurture the body, mind, and spirit.</p>
+                                   
+                                   <h3>Vision</h3>
+                                   <p>"Inspiring healthy living, sustaining a greener planet."</p>
+                                   <h3>Mission</h3>
+                                   <p>"Developing and strategically positioning scientifically-backed, sustainable products and services that enhance human physical and mental well-being by blending modern technology with the richness of local heritage, seamlessly integrating them into daily habits."</p>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12">
+                         <div class="wow fadeInUp about-image" data-wow-delay="0.6s">
+                              <img src="images/logo_about.webp" class="img-responsive" alt="">
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </section>
+
+
+     <!-- TEAM -->
+     <section id="pillars" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                              <h2>Our Pillars of Purpose</h2>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="team-thumb wow fadeInUp" data-wow-delay="0.2s">
+                              <img src="images/nourish.png" class="img-responsive" alt="">
+                                   <div class="team-hover">
+                                        <div class="team-item">
+                                             <h4>Duis vel lacus id magna mattis vehicula</h4> 
+                                             <ul class="social-icon">
+                                                  <li><a href="#" class="fa fa-linkedin-square"></a></li>
+                                                  <li><a href="#" class="fa fa-envelope-o"></a></li>
+                                             </ul>
+                                        </div>
+                                   </div>
+                         </div>
+                         <div class="team-info">
+                              <h3>Green Auysha Nourish</h3>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="team-thumb wow fadeInUp" data-wow-delay="0.4s">
+                              <img src="images/pulse.png" class="img-responsive" alt="">
+                                   <div class="team-hover">
+                                        <div class="team-item">
+                                             <h4>Cras suscipit neque quis odio feugiat</h4>
+                                             <ul class="social-icon">
+                                                  <li><a href="#" class="fa fa-instagram"></a></li>
+                                                  <li><a href="#" class="fa fa-flickr"></a></li>
+                                             </ul>
+                                        </div>
+                                   </div>
+                         </div>
+                         <div class="team-info">
+                              <h3>Green Ayusha Pulse</h3>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="team-thumb wow fadeInUp" data-wow-delay="0.6s">
+                              <img src="images/moments.png" class="img-responsive" alt="">
+                                   <div class="team-hover">
+                                        <div class="team-item">
+                                             <h4>Etiam auctor enim tristique faucibus</h4>
+                                             <ul class="social-icon">
+                                                  <li><a href="#" class="fa fa-github"></a></li>
+                                                  <li><a href="#" class="fa fa-google"></a></li>
+                                             </ul>
+                                        </div>
+                                   </div>
+                         </div>
+                         <div class="team-info">
+                              <h3>Green Auysha Moments</h3>
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </section>
+
+     <section id="greena" class="section-greena">
+          
+          <div class="container">
+               
+               <div class="row">
+                     
+                    <div style="padding-top: 300px;" class="col-md-6 col-sm-6">
+                         <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                              <h2>Hello, my dear Healthies!</h2>
+<p>
+     I’m Greena Singhewansha from the beautiful island of Sri Lanka. I’m 35 years old, and my heart belongs to my little world—a loving home where I share life’s sweetest moments with my wonderful husband, daughter, and son.
+
+</p>
+<p>My biggest passion? Health & well-being! It’s not just my profession—it’s a part of who I am. As a freelance well-being specialist, I do my best to balance work, family, friendships, and most importantly, self-care. I truly believe that “Without me, I have nothing”—so taking care of my health is the greatest gift I can give to those I love.
+</p>
+<p>But my journey isn’t just about me…
+I love sharing my experiences and guiding others who want to embrace a healthy lifestyle. There’s nothing more fulfilling than helping someone take a step toward a happier, healthier life!
+</p>
+<p>And now, I have the most exciting news to share!
+I’m joining Green ආයුෂ as its brand ambassador! This is more than just a role—it’s a beautiful journey, one that I can’t wait to experience with you. I know it will be exciting, challenging, and truly rewarding.
+</p>
+<p>
+So, let’s walk this path together, hand in hand, for an extra moment! Stay connected with me—our well-being journey is just beginning!
+</p>
+<p>With love & wellness, <br>Greena ❤</p>
+                         </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6">
+                         <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                              <img src="images/greena.png" class="greena-top" alt="Green ආයුෂ Logo">
+                              
+                         </div>
+                    </div>
+                   
+               </div>
+     </section>
+
+
+            
+
+
+     <!-- FOOTER -->
+     <footer id="contact" style="background-color: #206127;" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+<section data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+	<!-- How to change your own map point
+            1. Go to Google Maps
+            2. Click on your location point
+            3. Click "Share" and choose "Embed map" tab
+            4. Copy only URL and paste it within the src="" field below
+	-->
+                    
+
+                    <div class="col-md-6 col-sm-12">
+
+                         <div class="col-md-12 col-sm-12">
+                              <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                                   <h2>Contact Us</h2>
+                              </div>
+                         </div>
+
+                         <!-- CONTACT FORM -->
+                         <form action="https://formspree.io/f/myzjjblg" method="post" class="wow fadeInUp" id="contact-form" role="form" data-wow-delay="0.8s">
+
+                              <!-- IF MAIL SENT SUCCESSFUL  // connect this with custom JS -->
+                              <h6 class="text-success">Your message has been sent successfully.</h6>
+                              
+                              <!-- IF MAIL NOT SENT -->
+                              <h6 class="text-danger">E-mail must be valid and message must be longer than 1 character.</h6>
+
+                              <div class="col-md-6 col-sm-6">
+                                   <input type="text" class="form-control" id="cf-name" name="name" placeholder="Full name">
+                              </div>
+
+                              <div class="col-md-6 col-sm-6">
+                                   <input type="email" class="form-control" id="cf-email" name="email" placeholder="Email address">
+                              </div>
+
+                              <div class="col-md-12 col-sm-12">
+
+                                   <textarea class="form-control" rows="6" id="cf-message" name="message" placeholder="Message"></textarea>
+
+                                   <button type="submit" class="form-control" id="cf-submit" name="submit">Send Message</button>
+                              </div>
+                         </form>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12" data-wow-delay="0.4s">
+                          <p>140/A, Jayasena Mw, Manavila, Walahanduwa, Galle, Sri Lanka.</p>
+                       
+                          <a href="mailto:greenayusha@gmail.com" class="fa fa-envelope-o fa-3x"></a>
+                        <a href="https://www.facebook.com/profile.php?id=61569216956292&mibextid=ZbWKwL" class="fa fa-facebook-square fa-3x" attr="facebook icon"></a>
+                         <a href="https://www.instagram.com/green_ayush" class="fa fa-instagram fa-3x"></a>
+                         <a href="https://pin.it/40DT7ukCB" class="fa fa-pinterest fa-3x"></a>
+                        <a href="https://wa.me/94767882590" class="fa fa-whatsapp fa-3x"></a>
+
+                        
+                 
+                      
+                    </div>    
+
+               </div>
+              
+          </div>
+     </section>   
+                   
+                    
+               </div>
+          </div>
+          <div class="container"><p>Copyright © Green Auysha </p></div>
+           
+     </footer>
+
+
+     <!-- SCRIPTS -->
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/jquery.stellar.min.js"></script>
+     <script src="js/wow.min.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/jquery.magnific-popup.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+
 </body>
 </html>
